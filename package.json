@@ -20,6 +20,7 @@
     "browser-sync": "^2.26.0",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.4"
   }
