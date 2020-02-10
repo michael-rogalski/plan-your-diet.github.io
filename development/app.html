@@ -149,7 +149,9 @@
           </table>
           <div class="under_table_bnt">
             <a class="under_table_bnt1" href="#">
-              <span><<<span> poprzedni</span> </a>
+              <span>
+                <<<span> poprzedni
+              </span> </a>
             <a class="under_table_bnt2" href="#"><span>nastepny</span><span>>></span> </a>
           </div>
         </div>
@@ -173,17 +175,17 @@
         <form class="recipe-form" action="">
           <div class="recipe-name">
             <label>Nazwa przepisu</label>
-            <textarea type="text" rows="4" cols="88"></textarea>
+            <textarea class="plan-text-input" type="text" rows="2"></textarea>
           </div>
           <div class="recipe-text">
             <label>Opis przepisu</label>
-            <textarea rows="4" cols="88"></textarea>
+            <textarea class="recipe-text-input" rows="2"></textarea>
           </div>
         </form>
         <div class="instructions-container">
           <div class="instructions">
             <h2 class="instructions-title">Instrukcje</h2>
-            <textarea class="add-instruction" rows="3"></textarea>
+            <textarea class="add-instruction" type="text" rows="3"></textarea>
             <i class="fas fa-plus-square add-instruction-btn"></i>
             <ol class="instruction-list">
             </ol>
@@ -192,8 +194,8 @@
             <h2 class="instructions-title">Składniki</h2>
             <textarea type="text" class="add-components" rows="3"></textarea>
             <i class="fas fa-plus-square add-components-btn"></i>
-            <ul class="components-list">
-            </ul>
+            <ol class="components-list">
+            </ol>
           </div>
         </div>
 
@@ -214,15 +216,15 @@
         <form class="plan-form" action="">
           <div class="plan-name">
             <label>Nazwa planu</label>
-            <textarea class="plan-name-input" type="text"></textarea>
+            <textarea class="plan-name-input" type="text" rows="1"></textarea>
           </div>
           <div class="plan-text">
             <label>Opis planu</label>
-            <textarea rows="4" class="plan-text-input"></textarea>
+            <textarea class="plan-text-input" type="text" rows="1"></textarea>
           </div>
           <div class="plan-number">
             <label>Numer tygodnia</label>
-            <input class="plan-number-input" type="text">
+            <textarea class="plan-number-input" type="text" rows="0"></textarea>
           </div>
 
 
@@ -442,6 +444,7 @@
               <th scope="col" class="plans-showing-row-table-header1">ID</th>
               <th scope="col" class="plans-showing-row-table-header2">NAZWA</th>
               <th scope="col" class="plans-showing-row-table-header3">OPIS</th>
+              <th scope="col" class="plans-showing-row-table-header4">NR. TYGODNIA</th>
               <th scope="col" class="plans-showing-row-table-header5">AKCJE</th>
             </tr>
           </thead>

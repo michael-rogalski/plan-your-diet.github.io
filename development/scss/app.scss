@@ -105,7 +105,7 @@
   font-size: 30px;
   color: #e58a20;
   display: none;
-  padding: 20px;
+  padding: 20px 20px 12px 10px;
 }
 
 .main-content {
@@ -283,16 +283,24 @@ początek sekcji nowy przepis...................................................
   flex-direction: column;
   .recipe-name {
     display: flex;
-    justify-content: space-between;
     padding-right: 80px;
     padding-top: 15px;
     padding-bottom: 20px;
-    font-size: 30px;
     input {
       color: $colorSidebar;
       font-size: 16px;
       padding: 5px;
       width: 70%;
+    }
+    textarea {
+      color: $colorSidebar;
+      padding: 5px;
+      font-size: 16px;
+      width: 98%;
+    }
+    label {
+      font-size: 30px;
+      text-align: start;
     }
   }
   .recipe-text {
@@ -305,6 +313,7 @@ początek sekcji nowy przepis...................................................
       color: $colorSidebar;
       padding: 5px;
       font-size: 16px;
+      width: 85%;
     }
   }
 }
@@ -361,17 +370,13 @@ początek sekcji nowy przepis...................................................
 .instruction-list,
 .components-list {
   width: 90%;
-  height: 240px;
+  height: auto;
   font-size: 16px;
   margin: 20px;
   overflow: auto;
   li {
     margin-left: 20px;
   }
-}
-
-.components-list {
-  margin-top: 58px;
 }
 
 .edit-icon {
@@ -403,14 +408,14 @@ początek sekcji nowy plan......................................................
   background-color: white;
   border: 1px dashed $colorSidebar;
   width: 96%;
-  padding: 40px;
+  padding: 40px 40px 10px 40px;
 }
 
 .add-plan-btn {
   top: 195px;
   right: 68px;
-    font-size: 40px !important;
-    color: #468966 !important;
+  font-size: 40px !important;
+  color: #468966 !important;
 }
 
 .plan-header {
@@ -452,7 +457,6 @@ początek sekcji nowy plan......................................................
       cursor: pointer;
     }
   }
-
 }
 
 .plan-form {
@@ -682,7 +686,7 @@ początek sekcji nowy plan......................................................
 
 .table_container {
   width: 100%;
-  height: 65%;
+  height: 66%;
   background-color: #fffffa;
   border: darkgray dashed 1px;
   padding: 10px;
@@ -728,9 +732,8 @@ początek sekcji nowy plan......................................................
   justify-content: space-between;
   .recipe-list-title {
     font-family: "Open Sans", sans-serif;
-    font-size: 35px;
-    color: #e58a20;
-    margin-bottom: 10px;
+    font-size: 30px;
+    color: #ffb03b;
   }
 }
 
@@ -753,35 +756,37 @@ początek sekcji nowy plan......................................................
   font-family: "Open Sans", sans-serif;
   font-size: 35px;
   color: #5b605f;
-  display:table;
-  width:90%;
-  table-layout:fixed;
+  display: table;
+  width: 100%;
+  table-layout: fixed;
 }
 
 .recipe-table-body {
-  display:block;
-  height:60vh;
-  overflow:auto;
+  display: block;
+  height: 60vh;
+  overflow: auto;
 
-  tr{
-    display:table;
-    width:100%;
-    table-layout:fixed;
+  tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
   }
-  td{
+  td {
     text-align: left;
   }
-  td:nth-of-type(1){
+  td:nth-of-type(1) {
     width: 5%;
-    text-align: center;
+    text-align: start;
+    padding: 0 0 0 1em;
   }
-  td:nth-of-type(2){
-    width: 25%;
+  td:nth-of-type(2) {
+    width: 40%;
+    padding: 0.5em 0 0.5em 7em;
   }
-  td:nth-of-type(3){
-    width: 60%;
+  td:nth-of-type(3) {
+    width: 72%;
   }
-  td:nth-of-type(4){
+  td:nth-of-type(4) {
     width: 10%;
   }
 }
@@ -793,21 +798,20 @@ początek sekcji nowy plan......................................................
 }
 
 .recipe-row-table-header2 {
-  width: 20%;
+  width: 30%;
   margin: 0 auto;
   padding: 10px 0 10px;
 }
 
 .recipe-row-table-header3 {
-  width: 70%;
-  margin: 0 auto;
+  width: 67%;
   display: flex;
   justify-content: start;
   padding: 10px 0 10px;
 }
 
 .recipe-row-table-header4 {
-  width: 5%;
+  width: 10%;
   margin: 0 auto;
   padding: 10px 0 10px;
 }
@@ -876,7 +880,7 @@ początek sekcji nowy plan......................................................
   background-color: white;
   border: 1px dashed $colorSidebar;
   width: 96%;
-  height: 95%;
+  height: 90%;
   padding: 40px;
 }
 
@@ -907,7 +911,6 @@ początek sekcji nowy plan......................................................
   font-family: "Open Sans", sans-serif;
   font-size: 35px;
   color: #e58a20;
-  margin-bottom: 10px;
 }
 
 .plans-showing-table {
@@ -919,39 +922,40 @@ początek sekcji nowy plan......................................................
   font-family: "Open Sans", sans-serif;
   font-size: 35px;
   color: #5b605f;
-  display:table;
-  width:97%;
-  table-layout:fixed;
+  display: table;
+  width: 100%;
 }
 
 .plans-showing-table-body {
-  display:block;
-  height:60vh;
-  overflow:auto;
+  display: block;
+  height: 60vh;
+  overflow: auto;
 
-  tr{
-    display:table;
-    width:100%;
-    table-layout:fixed;
+  tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
   }
-  td{
+  td {
     text-align: left;
   }
-  td:nth-of-type(1){
+  td:nth-of-type(1) {
     width: 5%;
-    text-align: center;
+    text-align: start;
+    padding: 0 0 0 1em;
   }
-  td:nth-of-type(2){
-    width: 20%;
+  td:nth-of-type(2) {
+    width: 40%;
+    padding: 0.5em 0 0.5em 7em;
   }
-  td:nth-of-type(3){
-    width: 60%;
+  td:nth-of-type(3) {
+    width: 38%;
   }
-  td:nth-of-type(4){
-    width: 15%;
+  td:nth-of-type(4) {
+    width: 35%;
   }
-  td:nth-of-type(5){
-    width: 5%;
+  td:nth-of-type(5) {
+    width: 10%;
   }
 }
 
@@ -962,13 +966,13 @@ początek sekcji nowy plan......................................................
 }
 
 .plans-showing-row-table-header2 {
-  width: 20%;
+  width: 30%;
   margin: 0 auto;
   padding: 10px 0 10px;
 }
 
 .plans-showing-row-table-header3 {
-  width: 60%;
+  width: 15%;
   margin: 0;
   display: flex;
   justify-content: start;
@@ -976,14 +980,13 @@ początek sekcji nowy plan......................................................
 }
 
 .plans-showing-row-table-header4 {
-  width: 15%;
   margin: 0 auto;
-  padding: 5px 0 5px;
-  text-align:left;
+  padding: 5px 0 5px 8em;
+  text-align: left;
 }
 
 .plans-showing-row-table-header5 {
-  width: 5%;
+  width: 10%;
   margin: 0 auto;
   padding: 5px 0 5px;
 }
@@ -1004,13 +1007,11 @@ początek sekcji nowy plan......................................................
   border-top: 1px solid $colorSidebar;
   padding: 10px 0 10px;
 }
-<<<<<<< HEAD
-=======
 
 .plans-showing-title {
   font-family: "Open Sans", sans-serif;
   font-size: 30px;
-  color:#FFB03B;
+  color: #ffb03b;
 }
 
 .add-plan-btn {
@@ -1022,4 +1023,3 @@ początek sekcji nowy plan......................................................
     cursor: pointer;
   }
 }
->>>>>>> 5f997d6ac65319d32bfed355641764b8dee8966d
