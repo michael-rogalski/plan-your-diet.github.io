@@ -3,7 +3,6 @@ var sass = require("gulp-sass");
 var sourcemaps = require("gulp-sourcemaps");
 var autoprefixer = require("gulp-autoprefixer");
 var browserSync = require("browser-sync").create();
-var deploy      = require('gulp-gh-pages');
 
 gulp.task("watch", function(cb) {
   gulp.watch("dist/scss/**/*.scss", gulp.series("sass"));
@@ -34,12 +33,6 @@ gulp.task("sass", function() {
     .pipe(sourcemaps.write())
     .pipe(gulp.dest("dist/css"))
     .pipe(browserSync.stream());
-});
-
-
-gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
 });
 
 
