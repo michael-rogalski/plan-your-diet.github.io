@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Zaplanuj Jedzonko</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <script src="https://kit.fontawesome.com/982e95a62a.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="app-body">
+  <header class="app-header">
+    <a class="logo-link" href="index.html">
+      <div class="header-logo">
+        <span class="logo logo1">Zaplanuj</span>
+        <span class="logo logo2">Jedzonko</span>
+      </div>
+    </a>
+    <div class="header-right">
+      <span class="header-right-name">Imię</span>
+      <i class="header-right-icon fas fa-user-circle"></i>
+    </div>
+  </header>
+  <main class="main">
+    <aside class="sidebar">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-item">
+          <button id="nav-button1">
+            <span>Pulpit</span>
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </li>
+        <li class="sidebar-nav-item">
+          <button id="nav-button2">
+            <span>Przepisy</span>
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </li>
+        <li class="sidebar-nav-item">
+          <button id="nav-button3">
+            <span>Plany</span>
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </li>
+      </ul>
+    </aside>
+    <section class="main-content">
+      <article class="new-guest-content">
+        <h1 class="new-guest-title">Witaj,</h1>
+        <span class="new-guest-text">
+          wygląda na to że jesteś tutaj pierwszy raz!
+        </span>
+        <form action="" class="guest-form">
+          <input class="guest-name-input" type="text" placeholder="tutaj wpisz jak masz na imię" />
+          <input class="guest-name-add" type="submit" value="Gotowe!" />
+        </form>
+        <span class="new-guest-text2">
+          Podaj nam swoje imię, a my zorganizujemy dla Ciebie naszą aplikację
+          :)
+        </span>
+      </article>
+
+
+      <section class="task3-content">
+        <div class="buttons-notifications">
+          <div class="add">
+            <div class="addRecipe">
+              <img class="addRecipeImg" src="./images/dodajprzepis.png" alt="dodajprzepis" />
+            </div>
+            <div class="addPlan">
+              <img class="addPlanImg" src="./images/dodajplan.png" alt="dodajplan" />
+            </div>
+          </div>
+
+          <div class="app-notifications">
+            <div class="app-notifications-info">
+              <i class="fas fa-info-circle"></i>
+              <p>Masz już 99 przepisów, nieźle!</p>
+            </div>
+            <div class="app-notifications-attention">
+              <i class="fas fa-exclamation-circle"></i>
+              <p>Pamiętaj, aby dodać plan!</p>
+            </div>
+            <div class="app-notifications-hello">
+              <i class="fas fa-check-circle"></i>
+              <p>Świetnie, że jesteś! Udanego planowania i smacznego! :)</p>
+            </div>
+          </div>
+        </div>
+        <div class="table_container">
+          <h2 class="table_title">Twój plan na <span id="week_number">{nr tygodnia}</span> tydzień</h2>
+          <table class="week_plan_table">
+            <tr class="col_titles">
+              <th style="width: 20px !important;">Poniedziałek</th>
+              <th>Wtorek</th>
+              <th>Środa</th>
+              <th>Czwartek</th>
+              <th>Piątek</th>
+              <th>Sobota</th>
+              <th>Niedziela</th>
+            </tr>
+            <tr>
+              <td class="poniedzialek">śniadanie</td>
+              <td class="wtorek">śniadanie</td>
+              <td class="sroda">śniadanie</td>
+              <td class="czwartek">śniadanie</td>
+              <td class="piatek">śniadanie</td>
+              <td class="sobota">śniadanie</td>
+              <td class="niedziela">śniadanie</td>
+            </tr>
+            <tr>
+              <td class="poniedzialek">drugie śniadanie</td>
+              <td class="wtorek">drugie śniadanie</td>
+              <td class="sroda">drugie śniadanie</td>
+              <td class="czwartek">drugie śniadanie</td>
+              <td class="piatek">drugie śniadanie</td>
+              <td class="sobota">drugie śniadanie</td>
+              <td class="niedziela">drugie śniadanie</td>
+            </tr>
+            <tr>
+              <td class="poniedzialek">zupa</td>
+              <td class="wtorek">zupa</td>
+              <td class="sroda">zupa</td>
+              <td class="czwartek">zupa</td>
+              <td class="piatek">zupa</td>
+              <td class="sobota">zupa</td>
+              <td class="niedziela">zupa</td>
+            </tr>
+            <tr>
+              <td class="poniedzialek">drugie danie</td>
+              <td class="wtorek">drugie danie</td>
+              <td class="sroda">drugie danie</td>
+              <td class="czwartek">drugie danie</td>
+              <td class="piatek">drugie danie</td>
+              <td class="sobota">drugie danie</td>
+              <td class="niedziela">drugie danie</td>
+            </tr>
+            <tr>
+              <td class="poniedzialek">kolacja</td>
+              <td class="wtorek">kolacja</td>
+              <td class="sroda">kolacja</td>
+              <td class="czwartek">kolacja</td>
+              <td class="piatek">kolacja</td>
+              <td class="sobota">kolacja</td>
+              <td class="niedziela">kolacja</td>
+            </tr>
+          </table>
+          <div class="under_table_bnt">
+            <a class="under_table_bnt1" href="#">
+              <span>
+                <<<span> poprzedni
+              </span> </a>
+            <a class="under_table_bnt2" href="#"><span>nastepny</span><span>>></span> </a>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section class="add-recipe">
+        <div class="recipe-header">
+          <h1 class="recipe-title">
+            Nowy Przepis
+          </h1>
+          <button class="recipe-button">
+            Zapisz i zamknij
+          </button>
+          <button class="recipe-button2 display-none">
+            Zapisz i zamknij
+          </button>
+        </div>
+        <form class="recipe-form" action="">
+          <div class="recipe-name">
+            <label>Nazwa przepisu</label>
+            <textarea class="plan-text-input" type="text" rows="2"></textarea>
+          </div>
+          <div class="recipe-text">
+            <label>Opis przepisu</label>
+            <textarea class="recipe-text-input" rows="2"></textarea>
+          </div>
+        </form>
+        <div class="instructions-container">
+          <div class="instructions">
+            <h2 class="instructions-title">Instrukcje</h2>
+            <textarea class="add-instruction" type="text" rows="3"></textarea>
+            <i class="fas fa-plus-square add-instruction-btn"></i>
+            <ol class="instruction-list">
+            </ol>
+          </div>
+          <div class="components">
+            <h2 class="instructions-title">Składniki</h2>
+            <textarea type="text" class="add-components" rows="3"></textarea>
+            <i class="fas fa-plus-square add-components-btn"></i>
+            <ol class="components-list">
+            </ol>
+          </div>
+        </div>
+
+      </section>
+      <section class="add-plan">
+        <div class="plan-header">
+          <h1 class="plan-title">
+            Nowy Plan
+          </h1>
+          <button class="plan-button">
+            Zapisz i zamknij
+          </button>
+          <button class="plan-button-edit display-none">
+            Zapisz i zamknij
+          </button>
+        </div>
+
+        <form class="plan-form" action="">
+          <div class="plan-name">
+            <label>Nazwa planu</label>
+            <textarea class="plan-name-input" type="text" rows="1"></textarea>
+          </div>
+          <div class="plan-text">
+            <label>Opis planu</label>
+            <textarea class="plan-text-input" type="text" rows="1"></textarea>
+          </div>
+          <div class="plan-number">
+            <label>Numer tygodnia</label>
+            <textarea class="plan-number-input" type="text" rows="0"></textarea>
+          </div>
+
+
+          <table class="plan-table">
+            <tr class="plan-table-row">
+              <th scope="col" class="row-table-header1"></th>
+              <th scope="col" class="row-table-header">Śniadanie</th>
+              <th scope="col" class="row-table-header">Drugie śniadanie</th>
+              <th scope="col" class="row-table-header">zupa</th>
+              <th scope="col" class="row-table-header">drugie danie</th>
+              <th scope="col" class="row-table-header">kolacja</th>
+            </tr>
+            <tr class="plan-table-row">
+              <th scope="row" class="col-table-header">poniedziałek</th>
+              <td class="table-cell">
+                <select class="recipe-select recipe-pon">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-pon">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-pon">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-pon">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-pon">
+                </select>
+              </td>
+            </tr>
+            <tr class="plan-table-row">
+              <th scope="row" class="col-table-header">wtorek</th>
+              <td class="table-cell">
+                <select class="recipe-select recipe-wt">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-wt">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-wt">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-wt">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-wt">
+                </select>
+              </td>
+            </tr>
+            <tr class="plan-table-row">
+              <th scope="row" class="col-table-header">środa</th>
+              <td class="table-cell">
+                <select class="recipe-select recipe-sr">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-sr">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-sr">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-sr">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-sr">
+                </select>
+              </td>
+            </tr>
+            <tr class="plan-table-row">
+              <th scope="row" class="col-table-header">czwartek</th>
+              <td class="table-cell">
+                <select class="recipe-select recipe-czw">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-czw">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-czw">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-czw">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-czw">
+                </select>
+              </td>
+            </tr>
+            <tr class="plan-table-row">
+              <th scope="row" class="col-table-header">piątek</th>
+              <td class="table-cell">
+                <select class="recipe-select recipe-pia">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-pia">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-pia">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-pia">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-pia">
+                </select>
+              </td>
+            </tr>
+            <tr class="plan-table-row">
+              <th scope="row" class="col-table-header">sobota</th>
+              <td class="table-cell">
+                <select class="recipe-select recipe-so">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-so">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-so">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-so">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-so">
+                </select>
+              </td>
+            </tr>
+            <tr class="plan-table-row">
+              <th scope="row" class="col-table-header">niedziela</th>
+              <td class="table-cell">
+                <select class="recipe-select recipe-nie">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-nie">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-nie">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-nie">
+                </select>
+              </td>
+              <td class="table-cell">
+                <select class="recipe-select recipe-nie">
+                </select>
+              </td>
+            </tr>
+
+
+          </table>
+
+        </form>
+      </section>
+
+
+      <section class="recipe-list display-none">
+        <div class="recipe-list-header">
+          <h1 class="recipe-list-title">
+            LISTA PRZEPISÓW
+          </h1>
+          <i class="fas fa-plus-square add-recipe-btn"></i>
+        </div>
+
+        <table class="recipe-table">
+          <thead class="recipe-table-head">
+            <tr class="recipe-table-row">
+              <th scope="col" class="recipe-row-table-header1">ID</th>
+              <th scope="col" class="recipe-row-table-header2">NAZWA</th>
+              <th scope="col" class="recipe-row-table-header3">OPIS</th>
+              <th scope="col" class="recipe-row-table-header4">AKCJE</th>
+            </tr>
+          </thead>
+          <tbody class="recipe-table-body">
+
+          </tbody>
+        </table>
+      </section>
+
+
+      <section class="plans-showing-list display-none">
+        <div class="plans-showing-list-header">
+          <h1 class="plans-showing-title">
+            LISTA PLANÓW
+          </h1>
+          <i class="fas fa-plus-square add-plan-btn"></i>
+        </div>
+
+        <table class="plans-showing-table">
+          <thead class="plans-showing-table-head">
+            <tr class="plans-showing-table-row">
+              <th scope="col" class="plans-showing-row-table-header1">ID</th>
+              <th scope="col" class="plans-showing-row-table-header2">NAZWA</th>
+              <th scope="col" class="plans-showing-row-table-header3">OPIS</th>
+              <th scope="col" class="plans-showing-row-table-header4">NR. TYGODNIA</th>
+              <th scope="col" class="plans-showing-row-table-header5">AKCJE</th>
+            </tr>
+          </thead>
+          <tbody class="plans-showing-table-body">
+
+          </tbody>
+        </table>
+      </section>
+
+    </section>
+  </main>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
