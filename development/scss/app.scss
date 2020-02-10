@@ -1,0 +1,1025 @@
+@import "variables";
+
+// początek sekcji głównej....................................................................................
+//..............................................................................................................
+
+.app-body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorHeader;
+}
+
+.header-logo {
+  font-family: "Charmonman", cursive;
+  font-size: 2.4em;
+  text-decoration: none;
+  padding: 0.5em 2.5em;
+}
+
+.logo_whole {
+  h1 {
+    padding: 0.5em 0em;
+  }
+}
+.logo-link {
+  text-decoration: none;
+}
+
+.logo1 {
+  color: white;
+}
+
+.logo2 {
+  color: #e58a20;
+  font-weight: 700;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right-name {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 38px;
+  font-weight: 700;
+  margin: 15px;
+}
+
+.header-right-icon {
+  color: #e58a20 !important;
+  font-size: 50px;
+  margin-right: 50px;
+  margin-left: 20px;
+}
+
+.main {
+  display: flex;
+  height: calc(100vh - 100px);
+}
+
+.sidebar {
+  width: 17%;
+  height: 100%;
+  background-color: $colorSidebar;
+}
+
+.sidebar-nav {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav-item {
+  width: 100%;
+}
+
+.sidebar-nav-item button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorSidebar;
+  border: none;
+  padding: 25px 15px 25px 35px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.sidebar-nav-item button span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  color: white;
+}
+
+.sidebar-nav-item button i {
+  font-size: 30px;
+  color: #e58a20;
+  display: none;
+  padding: 20px;
+}
+
+.main-content {
+  width: 83%;
+  height: calc(100vh - 100px);
+  background-image: url("../images/tlo.png");
+}
+
+.border {
+  border-left: 5px solid #e58a20 !important;
+  font-weight: 700 !important;
+}
+
+.arrow {
+  display: block !important;
+}
+
+/* początek sekcji nowy aplikant..............................................................................
+.............................................................................................................*/
+
+.new-guest-content {
+  color: $colorSidebar;
+  font-family: "Open Sans", sans-serif;
+  margin: 40px auto 0;
+  background-color: white;
+  border: 1px dashed $colorSidebar;
+  width: 96%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-guest-title {
+  font-size: 50px;
+  padding-top: 70px;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.new-guest-text {
+  font-weight: 700;
+  text-align: center;
+  width: 35%;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.new-guest-text2 {
+  text-align: center;
+  width: 40%;
+  font-size: 28px;
+  padding: 20px;
+}
+
+.guest-form {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guest-name-input {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+.guest-name-add {
+  width: 50%;
+  background-color: #e58a20;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px 25px;
+  border: none;
+  margin-top: 20px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.display-none {
+  display: none !important;
+}
+
+/*
+początek sekcji zadania 3................................................................................
+.........................................................................................................
+*/
+
+.task3-content {
+  margin: 40px auto 0;
+  width: 96%;
+  height: 90%;
+}
+
+.add {
+  display: flex;
+  width: 40%;
+  float: right;
+}
+
+.add:hover {
+  cursor: pointer;
+}
+
+.addRecipeImg {
+  width: 198px;
+  height: 177px;
+  margin-right: 10px;
+}
+
+/*
+początek sekcji nowy przepis...................................................
+.............................................................................
+*/
+
+.add-recipe {
+  color: $colorSidebar;
+  font-family: "Open Sans", sans-serif;
+  margin: 40px auto 0;
+  background-color: white;
+  border: 1px dashed $colorSidebar;
+  width: 96%;
+  height: 90%;
+  padding: 40px;
+}
+
+.recipe-header {
+  border-bottom: 2px solid $colorSidebar;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .recipe-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    color: #e58a20;
+    margin-bottom: 10px;
+  }
+  .recipe-button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: #e58a20;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .recipe-button2 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: #e58a20;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.recipe-form {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  .recipe-name {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    input {
+      color: $colorSidebar;
+      font-size: 16px;
+      padding: 5px;
+      width: 70%;
+    }
+  }
+  .recipe-text {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    textarea {
+      color: $colorSidebar;
+      padding: 5px;
+      font-size: 16px;
+    }
+  }
+}
+
+.instructions-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.instructions-title {
+  font-size: 35px;
+  font-weight: normal;
+  display: block;
+  padding: 5px 5px 5px 0;
+  border-bottom: 2px solid $colorSidebar;
+}
+
+.instructions,
+.components {
+  position: relative;
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-instruction {
+  width: 90%;
+  margin: 8px;
+  padding: 3px;
+  font-size: 16px;
+  color: $colorSidebar;
+}
+
+.add-components {
+  width: 90%;
+  margin: 8px;
+  padding: 3px;
+  font-size: 16px;
+  color: $colorSidebar;
+}
+
+.add-components-btn,
+.add-instruction-btn {
+  position: absolute;
+  top: 62px;
+  right: 8px;
+  font-size: 40px !important;
+  color: $colorSuccess !important;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.instruction-list,
+.components-list {
+  width: 90%;
+  height: 240px;
+  font-size: 16px;
+  margin: 20px;
+  overflow: auto;
+  li {
+    margin-left: 20px;
+  }
+}
+
+.components-list {
+  margin-top: 58px;
+}
+
+.edit-icon {
+  font-size: 20px !important;
+  color: #efc307 !important;
+  padding: 0 7px !important;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.bin-icon {
+  font-size: 20px !important;
+  color: darkred !important;
+  padding: 0 7px !important;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+/*
+początek sekcji nowy plan...................................................................
+*/
+
+.add-plan {
+  color: $colorSidebar;
+  font-family: "Open Sans", sans-serif;
+  margin: 40px auto 0;
+  background-color: white;
+  border: 1px dashed $colorSidebar;
+  width: 96%;
+  padding: 40px;
+}
+
+.add-plan-btn {
+  top: 195px;
+  right: 68px;
+    font-size: 40px !important;
+    color: #468966 !important;
+}
+
+.plan-header {
+  border-bottom: 2px solid $colorSidebar;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .plan-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    color: #e58a20;
+    margin-bottom: 10px;
+  }
+  .plan-button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: #e58a20;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .plan-button-edit {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    border: none;
+    color: white;
+    background-color: #e58a20;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 10px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+}
+
+.plan-form {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  .plan-name {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .plan-name-input {
+      color: $colorSidebar;
+      font-size: 16px;
+      padding: 5px;
+      width: 85%;
+    }
+  }
+  .plan-text {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .plan-text-input {
+      color: $colorSidebar;
+      padding: 5px;
+      font-size: 16px;
+      width: 85%;
+    }
+  }
+
+  .plan-number {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .plan-number-input {
+      margin-left: 5px;
+      color: $colorSidebar;
+      padding: 5px;
+      font-size: 16px;
+      width: 10%;
+    }
+  }
+}
+
+.plan-table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 42vh;
+}
+
+.row-table-header {
+  width: 16%;
+  margin: 0 auto;
+  border-top: 1px solid $colorSidebar;
+}
+
+.row-table-header1 {
+  width: 16%;
+  margin: 0 auto;
+}
+
+.plan-table-row {
+  border-top: 1px solid $colorSidebar;
+}
+
+.recipe-select {
+  width: 90%;
+  margin-bottom: 5px;
+  background-color: white;
+  font-size: 16px;
+  color: $colorSidebar;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid $colorSidebar;
+}
+
+/// przyciski dodaj przepis i dodaj plan....................................................
+.buttons-notifications {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  height: 30%;
+  width: 100%;
+}
+
+.add {
+  width: 40%;
+  height: 100%;
+}
+.addRecipe,
+.addPlan {
+  width: 45%;
+  height: 90%;
+  overflow: hidden;
+}
+
+.addPlanImg,
+.addRecipeImg {
+  width: 90%;
+  height: 100%;
+}
+
+/*
+3.3 Pulpit - Widżet powiadomienia........................................................................
+.........................................................................................................
+*/
+
+.app-notifications {
+  width: 65%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+
+.app-notifications-info {
+  height: 30%;
+  background-color: white;
+  border: 1px dashed #3498db;
+  margin-bottom: 3.333%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+
+  .fa-info-circle {
+    font-size: 2.5em;
+    padding: 5px 15px;
+    color: #3498db;
+  }
+
+  p {
+    font-size: 18px;
+    color: #3498db;
+  }
+}
+
+.app-notifications-info:after {
+  content: "\f057";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  width: 10px;
+  color: #3498db;
+  top: 8px;
+  right: 18px;
+  font-size: 1.5em;
+}
+
+.app-notifications-attention {
+  height: 30%;
+  background-color: white;
+  border: 1px dashed #ffb03b;
+  margin-bottom: 3.333%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+
+  .fa-exclamation-circle {
+    font-size: 2.5em;
+    padding: 5px 15px;
+    color: #ffb03b;
+  }
+
+  p {
+    font-size: 18px;
+    color: #ffb03b;
+    position: relative;
+  }
+}
+
+.app-notifications-attention:after {
+  content: "\f057";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 33%;
+  color: #ffb03b;
+  top: 8px;
+  right: 18px;
+  font-size: 1.5em;
+}
+
+.app-notifications-hello {
+  padding: 10px;
+
+  height: 30%;
+  background-color: white;
+  border: 1px dashed #468966;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+
+  .fa-check-circle {
+    font-size: 2.5em;
+    padding: 5px 15px 5px 5px;
+    color: #468966;
+  }
+
+  p {
+    font-size: 18px;
+    color: #468966;
+  }
+}
+
+.app-notifications-hello:after {
+  content: "\f057";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 33%;
+  color: #468966;
+  top: 8px;
+  right: 18px;
+  font-size: 1.5em;
+}
+//Plan tygodnia..................................................................................................................................................
+
+.table_container {
+  width: 100%;
+  height: 65%;
+  background-color: #fffffa;
+  border: darkgray dashed 1px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.table_title {
+  color: #ff6500;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.week_plan_table {
+  width: 100%;
+  height: 75%;
+  border: darkgray solid 1px;
+  border-collapse: collapse;
+  border-left: none;
+  border-right: none;
+}
+
+/*
+5.1 Wyświetlanie listy przepisów........................................................................
+.........................................................................................................
+*/
+
+.recipe-list {
+  color: $colorSidebar;
+  font-family: "Open Sans", sans-serif;
+  margin: 40px auto 0;
+  background-color: white;
+  border: 1px dashed $colorSidebar;
+  width: 96%;
+  height: 90%;
+  padding: 40px;
+}
+
+.recipe-list-header {
+  border-bottom: 2px solid $colorSidebar;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .recipe-list-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    color: #e58a20;
+    margin-bottom: 10px;
+  }
+}
+
+.add-recipe-btn {
+  top: 195px;
+  right: 68px;
+  font-size: 40px !important;
+  color: $colorSuccess !important;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.recipe-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.recipe-table-head {
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  color: #5b605f;
+  display:table;
+  width:90%;
+  table-layout:fixed;
+}
+
+.recipe-table-body {
+  display:block;
+  height:60vh;
+  overflow:auto;
+
+  tr{
+    display:table;
+    width:100%;
+    table-layout:fixed;
+  }
+  td{
+    text-align: left;
+  }
+  td:nth-of-type(1){
+    width: 5%;
+    text-align: center;
+  }
+  td:nth-of-type(2){
+    width: 25%;
+  }
+  td:nth-of-type(3){
+    width: 60%;
+  }
+  td:nth-of-type(4){
+    width: 10%;
+  }
+}
+
+.recipe-row-table-header1 {
+  width: 5%;
+  margin: 0 auto;
+  padding: 10px 0 10px;
+}
+
+.recipe-row-table-header2 {
+  width: 20%;
+  margin: 0 auto;
+  padding: 10px 0 10px;
+}
+
+.recipe-row-table-header3 {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  padding: 10px 0 10px;
+}
+
+.recipe-row-table-header4 {
+  width: 5%;
+  margin: 0 auto;
+  padding: 10px 0 10px;
+}
+
+.recipe-id {
+  color: $colorSidebar;
+  font-size: 20px;
+  text-align: center;
+}
+
+.recipe-name {
+  color: $colorSidebar;
+  font-size: 20px;
+  text-align: center;
+}
+
+.recipe-table-body td {
+  border-top: 1px solid $colorSidebar;
+  padding: 10px 0 10px;
+}
+
+.col_titles > th {
+  text-align: left;
+  font-size: 1.5rem;
+  border: 1px solid gray;
+  padding: 10px 15px;
+  border-left: none;
+  border-right: none;
+}
+
+.week_plan_table td {
+  font-size: 1.4rem;
+  color: gray;
+  border: 1px solid gray;
+  padding: 5px 10px;
+  border-left: none;
+  border-right: none;
+}
+
+.under_table_bnt {
+  font-size: 1.1rem;
+  margin: 10px;
+  color: #ffb03b;
+  display: flex;
+  justify-content: space-between;
+
+  > a {
+    text-decoration: none;
+    color: #ffb03b;
+
+    :visited {
+      color: #ffb03b;
+    }
+  }
+}
+
+/*
+8.1 Wyświetlanie listy planow........................................................................
+.........................................................................................................
+*/
+
+.plans-showing-list {
+  color: $colorSidebar;
+  font-family: "Open Sans", sans-serif;
+  margin: 40px auto 0;
+  background-color: white;
+  border: 1px dashed $colorSidebar;
+  width: 96%;
+  height: 95%;
+  padding: 40px;
+}
+
+.plans-showing-list-header {
+  border-bottom: 2px solid $colorSidebar;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  .plans-showing-list-title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 35px;
+    color: #e58a20;
+    margin-bottom: 10px;
+  }
+}
+
+.add-plans-showing-btn {
+  top: 195px;
+  right: 68px;
+  font-size: 40px !important;
+  color: $colorSuccess !important;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.plans-showing-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  color: #e58a20;
+  margin-bottom: 10px;
+}
+
+.plans-showing-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.plans-showing-table-head {
+  font-family: "Open Sans", sans-serif;
+  font-size: 35px;
+  color: #5b605f;
+  display:table;
+  width:97%;
+  table-layout:fixed;
+}
+
+.plans-showing-table-body {
+  display:block;
+  height:60vh;
+  overflow:auto;
+
+  tr{
+    display:table;
+    width:100%;
+    table-layout:fixed;
+  }
+  td{
+    text-align: left;
+  }
+  td:nth-of-type(1){
+    width: 5%;
+    text-align: center;
+  }
+  td:nth-of-type(2){
+    width: 20%;
+  }
+  td:nth-of-type(3){
+    width: 60%;
+  }
+  td:nth-of-type(4){
+    width: 15%;
+  }
+  td:nth-of-type(5){
+    width: 5%;
+  }
+}
+
+.plans-showing-row-table-header1 {
+  width: 5%;
+  margin: 0 auto;
+  padding: 10px 0 10px;
+}
+
+.plans-showing-row-table-header2 {
+  width: 20%;
+  margin: 0 auto;
+  padding: 10px 0 10px;
+}
+
+.plans-showing-row-table-header3 {
+  width: 60%;
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  padding: 10px 0 10px;
+}
+
+.plans-showing-row-table-header4 {
+  width: 15%;
+  margin: 0 auto;
+  padding: 5px 0 5px;
+  text-align:left;
+}
+
+.plans-showing-row-table-header5 {
+  width: 5%;
+  margin: 0 auto;
+  padding: 5px 0 5px;
+}
+
+.plans-showing-id {
+  color: $colorSidebar;
+  font-size: 20px;
+  text-align: center;
+}
+
+.plans-showing-name {
+  color: $colorSidebar;
+  font-size: 20px;
+  text-align: center;
+}
+
+.plans-showing-table-body td {
+  border-top: 1px solid $colorSidebar;
+  padding: 10px 0 10px;
+}
+<<<<<<< HEAD
+=======
+
+.plans-showing-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 30px;
+  color:#FFB03B;
+}
+
+.add-plan-btn {
+  top: 195px;
+  right: 68px;
+  font-size: 40px !important;
+  color: $colorSuccess !important;
+  &:hover {
+    cursor: pointer;
+  }
+}
+>>>>>>> 5f997d6ac65319d32bfed355641764b8dee8966d
