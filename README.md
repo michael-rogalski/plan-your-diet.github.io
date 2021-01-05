@@ -2,7 +2,7 @@
 
 >Add your favorite recipes, plan what you will eat and when, and stick to the plan.
 
-Link to the app: https://michael-rogalski.github.io/to-do-list.github.io/<br>
+Link to the app: https://michael-rogalski.github.io/plan-your-diet.github.io/<br>
 **Important:** the app is still being developed. Some features are not yet ready.
 
 ## Technologies used
